@@ -1,0 +1,62 @@
+#page-boletim-detail {
+  width: 100vw;
+  height: 100vh;
+}
+
+#page-boletim-detail .page-header .header-content {
+  margin-bottom: 6.4rem;
+}
+
+#page-boletim-detail main {
+  background: var(--color-box-base);
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+  overflow: hidden;
+}
+
+#page-boletim-detail main h2 {
+  font: 700 3rem Archivo;
+  text-align: center;
+  color: var(--color-text-title);
+  padding-bottom: 1rem;
+}
+
+#page-boletim-detail main .table-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  margin: auto;
+}
+
+#page-boletim-detail main .rTable {
+  width: 100%;
+  text-align: left;
+}
+
+#page-boletim-detail main .rTable th {
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  font: 700 2rem Archivo;
+}
+
+#page-boletim-detail main .rTable tbody tr:nth-child(2n) {
+  background: var(--color-line-in-white);
+}
+
+@media (min-width: 700px) {
+  #page-boletim-detail main .table-content {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  #page-boletim-detail main .rTable tbody tr td:nth-child(1) {
+    width: 85%;
+  }
+  #page-boletim-detail main .rTable tbody tr td:nth-child(2) {
+    width: 15%;
+  }
+}
