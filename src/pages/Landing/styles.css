@@ -31,7 +31,9 @@
 
 .buttons-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 3.2rem 0;
 }
 
@@ -39,7 +41,8 @@
   width: 30rem;
   height: 10.4rem;
   border-radius: 0.8rem;
-  font: 700 1.4rem Archivo;
+
+  font: 700 1.8rem Archivo;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +54,7 @@
 }
 
 .buttons-container a:first-child {
-  margin-right: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .buttons-container a.secretaria {
@@ -70,14 +73,19 @@
   background: var(--color-secundary-dark);
 }
 
-@media (min-width: 315px) {
-  .buttons-container a {
-    font-size: 1.8rem;
-  }
-}
-
 @media (min-width: 400px) {
   .buttons-container a {
     font-size: 2rem;
+  }
+
+  .buttons-container a:first-child {
+    margin-right: 1.6rem;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3.2rem 0;
   }
 }
