@@ -31,7 +31,7 @@
 }
 
 #page-aluno-login main fieldset legend {
-  font: 700 2.4rem Archivo;
+  font: 700 2.2rem Archivo;
   color: var(--color-text-title);
   margin-bottom: 2.4rem;
   display: flex;
@@ -81,6 +81,12 @@
 
 #page-aluno-login main footer button:hover {
   background: var(--color-secundary-dark);
+}
+
+@media (min-width: 400px) {
+  #page-aluno-login main fieldset legend {
+    font-size: 2.6rem;
+  }
 }
 
 @media (min-width: 700px) {

@@ -30,7 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font: 700 2rem Archivo;
+  font: 500 1.6rem Archivo;
   color: var(--color-text-title);
 }
 
@@ -69,6 +69,12 @@
 
 #page-aluno-detail main footer button:hover {
   background: var(--color-secundary-dark);
+}
+
+@media (min-width: 400px) {
+  #page-aluno-detail main fieldset .legend-detail {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 700px) {
