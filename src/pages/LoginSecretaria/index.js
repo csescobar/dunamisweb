@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import "./styles.css";
-import PageHeader from "../../components/PageHeader";
-import Input from "../../components/Input";
+import './styles.css';
+import PageHeader from '../../components/PageHeader';
+import Input from '../../components/Input';
 import warningIcon from '../../assets/images/icons/warning.svg';
 //import { useHistory } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 
 function LoginSecretaria() {
   //const history = useHistory ();
-  const [name, setName] = useState("");
-  const [password, setPassword] = useState("");
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
 
   function handleLogin() {}
 
@@ -25,7 +25,7 @@ function LoginSecretaria() {
               name="name"
               placeholder="Usuário"
               value={name}
-              onChange={(e) => {
+              onChange={e => {
                 setName(e.target.value);
               }}
             />
@@ -33,17 +33,17 @@ function LoginSecretaria() {
               name="password"
               placeholder="Senha"
               value={password}
-              onChange={(e) => {
+              onChange={e => {
                 setPassword(e.target.value);
               }}
             />
           </fieldset>
           <footer>
-          <p>
+            <p>
               <img src={warningIcon} alt="Aviso importante" />
-            Importante! <br />
-            Preencha os dados
-          </p>
+              Importante! <br />
+              Preencha os dados
+            </p>
             <button type="submit">Entrar</button>
           </footer>
         </form>

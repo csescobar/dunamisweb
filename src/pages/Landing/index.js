@@ -8,7 +8,10 @@ function Aluno() {
     <div id="page-landing">
       <div id="page-landing-content" className="container">
         <div className="logo-container">
-          <img src="http://sga.igrejabatistadafe.com.br/images/logo.png" alt="Dunamis" />
+          <img
+            src="http://sga.igrejabatistadafe.com.br/images/logo.png"
+            alt="Dunamis"
+          />
           <h2>Sistema para Gerenciamento Escolar.</h2>
         </div>
         <div className="buttons-container">
@@ -19,7 +22,7 @@ function Aluno() {
             Login aluno
           </Link>
         </div>
-     </div>
+      </div>
     </div>
   );
 }

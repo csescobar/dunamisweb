@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import "./styles.css";
-import PageHeader from "../../components/PageHeader";
+import './styles.css';
+import PageHeader from '../../components/PageHeader';
 import { useHistory } from 'react-router-dom';
 
 function Aluno() {
-  
   const history = useHistory();
-  
+
   function handleBoletim(e) {
     e.preventDefault();
 
@@ -25,7 +24,9 @@ function Aluno() {
           </div>
         </fieldset>
         <footer>
-          <button type="button" onClick={handleBoletim} >Boletim de notas</button>
+          <button type="button" onClick={handleBoletim}>
+            Boletim de notas
+          </button>
           <button type="button">Financeiro</button>
           <button type="button">Consulta presença</button>
           <button type="button">Colegas de classe</button>
